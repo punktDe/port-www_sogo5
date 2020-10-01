@@ -14,7 +14,8 @@ LICENSE=		GPLv2
 LIB_DEPENDS=		libmemcached.so:databases/libmemcached \
 			libcurl.so:ftp/curl \
 			libDOM.so:devel/sope4 \
-			libsodium.so:security/libsodium
+			libsodium.so:security/libsodium \
+			libzip.so:archivers/libzip
 RUN_DEPENDS=		zip:archivers/zip
 
 OPTIONS_DEFINE=	ACTIVESYNC
