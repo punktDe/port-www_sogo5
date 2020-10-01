@@ -1,0 +1,12 @@
+--- Tests/Unit/GNUmakefile.orig 2020-08-10 15:31:38.000000000 +0000
++++ Tests/Unit/GNUmakefile      2020-10-01 07:57:51.252069000 +0000
+@@ -43,7 +43,7 @@
+        -Wall -D_GNU_SOURCE -I../../SOPE/ -I../../SoObjects/ -I../../UI/ -I../../OpenChange
+
+ ADDITIONAL_LIB_DIRS += \
+-       -L../../SoObjects/SOGo/SOGo.framework/Versions/Current/sogo -L../../SOPE/NGCards/obj -L../../SOPE/GDLContentStore/obj -lSOGo -lNGMime -lNGCards -lGDLContentStore -lNGExtensions -lSBJson -lobjc \
++       -L../../SoObjects/SOGo/SOGo.framework/Versions/Current/sogo -L../../SOPE/NGCards/obj -L../../SOPE/GDLContentStore/obj -lSOGo -lNGMime -lNGCards -lGDLContentStore -lNGExtensions -lSBJson -lGDLAccess -lNGObjWeb -lEOControl -lDOM -lNGLdap -lobjc \
+        -L/usr/local/lib  -lSaxObjC -lNGStreams \
+        -Wl,-rpath,../../SoObjects/SOGo/SOGo.framework/Versions/Current/sogo -Wl,-rpath,../../SOPE/NGCards/obj -Wl,-rpath,../../SOPE/GDLContentStore/obj
+ ADDITIONAL_LDFLAGS += -Wl,--no-as-needed
+
